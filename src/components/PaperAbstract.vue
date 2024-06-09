@@ -39,11 +39,11 @@ export default {
 h3 {
   margin: 0;
   text-align: center;
-  font-size: 1.4vw;
+  font-size: 1.5rem !important;
 }
 p {
   text-align: left;
-  font-size: 1.1vw;
+  font-size: 1.2rem;
 }
 ul {
   list-style-type: none;
@@ -65,7 +65,7 @@ button {
 }
 
 button span b {
-  font-size: 1.1vw;
+  font-size: 1.2rem;
 }
 
 .mt-2 {
@@ -75,6 +75,51 @@ button span b {
 .paper-link {
   font-size: 1.4rem;
   font-weight: bold;
+}
+
+@media (max-width: 890px){
+  h3 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.2rem !important;
+  }
+  p {
+    text-align: left;
+    font-size: 1rem;
+  }
+  button span b {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px){
+  h3 {
+  margin: 0;
+  text-align: center;
+  font-size: 1rem !important;
+  }
+  p {
+    text-align: left;
+    font-size: 0.8rem;
+  }
+  button span b {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 430px){
+  h3 {
+  margin: 0;
+  text-align: center;
+  font-size: 0.85rem !important;
+  }
+  p {
+    text-align: left;
+    font-size: 0.7rem;
+  }
+  button span b {
+    font-size: 0.7rem;
+  }
 }
 
 </style>

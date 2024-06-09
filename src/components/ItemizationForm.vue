@@ -17,18 +17,18 @@
         <br/>
         <el-form-item class="form-label" label="Paste a link from SEC website. Only HTML files are supported in this demo." :label-width="formLabelWidth">
           <div class="hint">
-            <span>
+            <span style = "display: block;">
               <a href="https://www.sec.gov/Archives/edgar/data/789019/000156459022026876/0001564590-22-026876.txt"
                   target="_blank"
-                  style="color: #51ADEB; font-size: 1.2vw !important;">
+                  style="color: #51ADEB;">
                   <i class="el-icon-s-data"></i>  Sample Link
               </a>
             </span>
-            <span>
-              &nbsp; &nbsp;
+            <span style = "display: block;">
+              <!-- &nbsp; &nbsp; -->
               <a href="https://www.google.com/search?q=sec+search+a+company" target="_blank"
-                  style="color: #51ADEB; font-size: 1.2vw !important;">
-                  <i class="el-icon-search"></i>  Search a company (please click the first link)
+                  style="color: #51ADEB;">
+                  <i class="el-icon-search"></i>  Search a company
               </a>
             </span>
           </div>
@@ -133,9 +133,9 @@ export default {
   text-align: left;
 }
 
-h3 {
-  font-size: 2vw !important;
-}
+// h3 {
+//   font-size: 2vw !important;
+// }
 
 br {
   display: none;
@@ -144,7 +144,7 @@ br {
 .el-form--label-top .el-form-item__label {
   padding: 0;
   color: white;
-  font-size: 1.1vw;
+  font-size: 1em;
 }
 
 .sample-form-selector {
@@ -158,16 +158,15 @@ br {
 .input-hint {
   color: red;
   font-weight: bold;
-  font-size: 0.7vw;
+  font-size: 0.8rem;
   margin: 10px 0 10px 0;
 }
 
 .el-input__inner {
-  font-size: 1vw !important;
+  font-size: 0.8rem;
   padding: 10px 0 10px 10px;
 }
 .el-select-dropdown__item span {
-  font-size: 1vw !important;
   margin: 10px 0 10px 0 !important;
 }
 
@@ -180,12 +179,51 @@ br {
 }
 
 button span{
-  font-size: 1.3vw !important;
+  font-size: 1rem !important;
 }
 
 .el-select .el-input .el-select__caret {
   font-size: 24px;
   color: rgb(93, 93, 93);
   font-weight: bold;
+}
+
+.sample-form-selector {
+  width: 210px;
+}
+
+a {
+  font-size: 0.8rem;
+}
+
+@media (max-width:600px){
+  .el-form--label-top .el-form-item__label {
+    font-size: 0.6rem;
+  }
+
+  .el-input__inner{
+    padding-right: 40px;
+  }
+
+  button span{
+    font-size: 0.5rem !important;
+  }
+
+  .sample-form-selector {
+    width: 100%;
+  }
+
+  .el-input__inner {
+    font-size: 0.5rem;
+    padding: 10px 0 10px 10px;
+  }
+
+  a {
+    font-size: 0.6rem !important;
+  }
+
+  .input-hint {
+    font-size: 0.5rem;
+  }
 }
 </style>

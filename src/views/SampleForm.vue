@@ -34,13 +34,24 @@ export default {
 h3 {
   margin: 40px 0 0;
   text-align: left;
-  font-size: 24px;
+  font-size: 1.7rem;
 }
 p {
   text-align: left;
 }
 
+.el-divider.el-divider--horizontal{
+  margin-left: 10%;
+  flex: auto;
+}
+
 .item-form {
   width: 70%;
+}
+
+@media (max-width:600px){
+  h3 {
+    font-size: 1.2rem;
+  }
 }
 </style>

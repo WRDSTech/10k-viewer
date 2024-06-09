@@ -226,11 +226,11 @@ export default {
 
 .html-wrapper {
   padding-bottom: 400px;
-  font-size: 3rem !important;
+  // font-size: 3rem !important;
 }
 
 .html-wrapper :deep div span {
-  font-size: 1.2vw !important;
+  font-size: 1.5vh !important;
   padding: 6px 0 6px 0;
   line-height: 120%;
 }
@@ -293,7 +293,7 @@ export default {
 .form-title {
   text-align: left;
   margin: 0;
-  font-size: 1.2vw;
+  font-size: 1.1rem;
 }
 
 .buttons {
@@ -301,6 +301,7 @@ export default {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  margin-left: 15px;
 }
 
 .button-container {
@@ -310,6 +311,70 @@ export default {
 
 .sections {
   overflow: auto;
+}
+
+@media (max-width: 800px){
+
+  .buttons {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+  }
+
+  .el-button--small{
+    width: 30%;
+    margin-left: 0px !important;
+    margin-top: 10%;
+    margin: auto;
+  }
+
+  .reader {
+    padding: 0;
+  }
+
+  .button-container {
+    flex-direction: column;
+  }
+
+  .form-title {
+    font-size: 2.5vw;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 611px){
+
+  .form-title {
+    text-align: center;
+    font-size: 2vw; /* Adjust font size for smaller screens */
+  }
+
+  .buttons {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+  }
+
+  .el-button--small{
+    width: 30%;
+    margin-left: 0px !important;
+    margin-top: 10%;
+    margin: auto;
+    padding: 2%;
+  }
+
+  .reader {
+    padding: 0;
+  }
+
+  .html-wrapper :deep div span {
+  font-size: 1.2vh !important;
+  padding: 6px 0 6px 0;
+  line-height: 120%;
+}
+
 }
 
 </style>
